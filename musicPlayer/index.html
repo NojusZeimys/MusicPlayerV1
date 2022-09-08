@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/dc71419793.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="playlist_UI">
+        <div class="now-playing-cotainer">
+          <h2 class="now-Playing_title">Now playing</h2>
+
+          <!-- single song box Start-->
+
+          <!-- single song box End-->
+        </div>
+        <h2 class="playlist_title">Playlist</h2>
+        <div class="playlist-container"></div>
+        <!-- single song box Start-->
+      </div>
+      <div class="Current-song_UI">
+        <div class="main-song_display">
+          <div class="song-info_display">
+            <div class="song-img_main">
+              <img class="song-cover_main" src="" alt="Song" />
+              <img class="disk" src="./images/UI/disk.png" alt="" />
+            </div>
+            <h1 class="song-name_main">Pope is a rockstar</h1>
+            <h4 class="song-creator-main">Sales</h4>
+          </div>
+          <div class="music-player">
+            <audio src="" class="music-src"></audio>
+            <div class="song-progress_container">
+              <div class="song-progress"></div>
+            </div>
+            <div class="controls">
+              <div class="volume-controls">
+                <button class="volume-btn">
+                  <i class="volume-icon fa-solid fa-volume-low fa-2x"></i>
+                </button>
+                <div class="volume-container hide">
+                  <div class="volume-selected"></div>
+                </div>
+              </div>
+              <button class="prew-btn">
+                <i class="fa-solid fa-backward fa-3x"></i>
+              </button>
+              <button class="play-pause_btn_main">
+                <i class="fa-solid fa-play fa-3x"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fa-solid fa-forward fa-3x"></i>
+              </button>
+              <h2 class="time">2.32/2.55</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

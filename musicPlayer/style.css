@@ -1,0 +1,362 @@
+:root {
+  --background-color: rgb(23, 23, 23);
+  --main-color: rgb(38, 38, 38);
+  --second-color: rgb();
+}
+
+* {
+  margin: 0px;
+  width: 0px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-body {
+  background: var(--main-color);
+  width: 55%;
+  height: 70%;
+  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playlist_UI {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  color: rgba(255, 0, 0);
+}
+
+/*  playlist single song container START */
+
+.now-playing-cotainer {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  color: rgba(255, 0, 0);
+}
+
+.playlist-container {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  background: var(--background-color);
+  color: rgba(255, 0, 0);
+}
+
+.now-Playing_title {
+  font-family: "Bebas Neue", cursive;
+  padding-top: 5%;
+  padding-left: 3%;
+  width: 100%;
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 1.5vw;
+}
+
+.now-Playing_title:after {
+  content: " ";
+  height: 2px;
+  width: 90%;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 90%;
+  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.7);
+}
+
+.playlist_title {
+  font-family: "Bebas Neue", cursive;
+  margin-left: 3%;
+  width: 100%;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 1.5vw;
+}
+
+.playlist_title:after {
+  content: " ";
+  height: 2px;
+  width: 90%;
+  background: rgb(255, 0, 0);
+  display: block;
+  position: absolute;
+  top: 90%;
+  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, 0.7);
+}
+
+/* Song box*/
+
+.song-box {
+  position: relative;
+  margin-top: 5%;
+  margin-left: 5%;
+  display: flex;
+  min-height: 40px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.song-name_box {
+  width: 90%;
+  margin-top: 1%;
+  margin-left: 3%;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  margin-right: 10rem;
+}
+
+.song-info_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  font-size: 1vw;
+  color: rgb(237, 237, 237);
+  background: linear-gradient(
+    to right,
+    rgba(38, 38, 38, 1) 60%,
+    rgba(38, 38, 38, 0.4) 90%,
+    rgba(38, 38, 38, 0.3) 100%
+  );
+}
+
+.second-info_box {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  font-size: 1vw;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  color: rgb(179, 179, 179);
+  margin-left: 5%;
+}
+
+.play-music_box {
+  position: relative;
+  width: 80px;
+  height: 60px;
+  border-radius: 100%;
+  top: -25px;
+  left: -25px;
+}
+
+.song-box button {
+  position: absolute;
+  left: 80%;
+  top: 20%;
+  width: 1.5vw;
+  height: 1.5vw;
+  background: none;
+  border: none;
+  color: rgb(237, 237, 237);
+}
+
+/* Main song ui Start*/
+.Current-song_UI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-song_display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.song-info_display {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  color: rgb(237, 237, 237);
+}
+
+.song-img_main {
+  padding-top: 5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 60%;
+}
+.song-cover_main {
+  width: 30%;
+  z-index: 1;
+}
+
+.disk {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  filter: blur(1px);
+}
+
+.song-info_display h1 {
+  padding-top: 8%;
+  width: 100%;
+}
+
+.song-info_display h4 {
+  width: 100%;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  color: rgb(179, 179, 179);
+}
+
+/* Song player*/
+.music-player {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+}
+
+.song-progress_container {
+  width: 70%;
+  height: 5%;
+  background: rgb(124, 124, 124);
+}
+
+.song-progress {
+  width: 50%;
+  height: 100%;
+  background: rgb(250, 250, 250);
+}
+
+.controls {
+  position: relative;
+  margin-top: 2%;
+  display: flex;
+  width: 30%;
+  height: 30%;
+  justify-content: space-between;
+}
+
+.controls button {
+  position: relative;
+  border: none;
+  background: none;
+  color: rgb(250, 250, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-play {
+  position: relative;
+  right: 10px;
+}
+
+.fa-pause {
+  position: relative;
+  right: 10px;
+}
+
+.fa-forward {
+  position: relative;
+  right: 21px;
+}
+
+.fa-backward {
+  position: relative;
+  right: 21px;
+}
+
+.spin-animation {
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 5s linear infinite;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.volume-controls {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: -60%;
+  top: 14%;
+  width: 50%;
+}
+
+.volume-container {
+  position: relative;
+  width: 3.5vw;
+  height: 5px;
+  background: rgb(124, 124, 124);
+  left: 25%;
+}
+
+.volume-selected {
+  width: 50%;
+  height: 5px;
+  background: rgb(250, 250, 250);
+}
+
+.time {
+  font-size: 0.8vw;
+  position: absolute;
+  right: -33%;
+  top: -30%;
+  color: rgb(179, 179, 179);
+}
